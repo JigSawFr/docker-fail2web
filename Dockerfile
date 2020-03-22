@@ -26,6 +26,8 @@ RUN set -ex; \
 	tar xzf /tmp/fail2web.tar.gz -C /var/www/html/; \
 	mv /var/www/html/fail2web-*/ /var/www/html/fail2web/; \
 	rm -f /tmp/fail2web.tar.gz
+	
+RUN sudo chown -R nginx.nginx /var/cache/nginx/client_temp
 
 VOLUME /srv/fail2web/ /var/www/html/fail2web
 
