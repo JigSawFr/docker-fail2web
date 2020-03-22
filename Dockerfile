@@ -1,6 +1,6 @@
 FROM nginx:alpine
 
-LABEL maintainer="Mathieu BRUNOT <mathieu.brunot at monogramm dot io>"
+LABEL maintainer="JigSawFr"
 
 ENV FAIL2REST_ADDR=http://localhost:5000/ \
 	FAIL2REST_USER=admin.fail2ban \
